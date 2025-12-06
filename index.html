@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Palee Vang">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlamNail – Luxury False Nail Sets</title>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JS link -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="site-container">
+        
+        <!-- HEADER -->
+        <header>
+            <h1>GlamNail</h1>
+            <p class="tagline">Luxury False Nail Sets for Every Style</p>
+
+            <nav>
+                <menu>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#game">Play & Win</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </menu>
+            </nav>
+
+            <!-- Light/Dark mode toggle -->
+            <div id="theme-toggle">
+                <label for="mode-select">Theme:</label>
+                <select id="mode-select">
+                    <option value="light" selected>Light Mode</option>
+                    <option value="dark">Dark Mode</option>
+                </select>
+            </div>
+        </header>
+
+        <!-- HERO -->
+        <section id="hero">
+            <h2>Premium False Nails. Salon Look. Instant Style.</h2>
+            <p>Discover long-lasting, stunning press-on nail sets created to elevate your look in minutes.</p>
+        </section>
+
+        <!-- PRODUCT DISPLAY SECTION -->
+        <main>
+            <section id="products">
+                <h2>Our Featured Nail Sets</h2>
+
+                <!-- Controls to switch products -->
+                <div id="product-controls">
+                    <button data-product="0">Rose Quartz Set</button>
+                    <button data-product="1">Midnight Gloss Set</button>
+                    <button data-product="2">French Luxe Set</button>
+                </div>
+
+                <!-- Product display area -->
+                <article id="product-display">
+                    <figure>
+                        <img id="product-image" src="images/kambria-trout-8XgdwxIJQAQ-unsplash.jpg" alt="Rose Quartz false nail set">
+                        <figcaption id="product-name">Rose Quartz Set</figcaption>
+                    </figure>
+
+                    <p id="product-description">
+                        Soft pink marble accents with a glossy finish. Perfect for everyday elegance.
+                    </p>
+                </article>
+            </section>
+
+            <!-- GAME PLAY SECTION -->
+            <section id="game">
+                <h2>Try Your Luck!</h2>
+                <p>Enter a number between 1 and 10. If your guess matches our random number, you win!</p>
+
+                <label for="guess-input">Your Guess:</label>
+                <input type="number" id="guess-input" min="1" max="10">
+
+                <button id="guess-button">Submit Guess</button>
+
+                <p id="game-result"></p>
+            </section>
+
+            <!-- CONTACT FORM -->
+            <section id="contact">
+                <h2>Contact GlamNail</h2>
+
+                <form id="contact-form" novalidate>
+                    
+                    <!-- Full Name -->
+                    <label for="full-name">Full Name *</label>
+                    <input type="text" id="full-name" required>
+                    <span class="error-message" id="name-error"></span>
+
+                    <!-- Phone -->
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone">
+                    <span class="error-message" id="phone-error"></span>
+
+                    <!-- Email -->
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email">
+                    <span class="error-message" id="email-error"></span>
+
+                    <!-- Preferred contact -->
+                    <fieldset>
+                        <legend>Preferred Contact Method *</legend>
+
+                        <label>
+                            <input type="radio" name="contact-method" value="phone" id="phone-label"> Phone
+                        </label>
+
+                        <label>
+                            <input type="radio" name="contact-method" value="email"> Email
+                        </label>
+
+                        <span class="error-message" id="method-error"></span>
+                    </fieldset>
+
+                    <!-- Comments -->
+                    <label for="comments">Comments *</label>
+                    <textarea id="comments" required></textarea>
+                    <span class="error-message" id="comments-error"></span>
+
+                    <!-- Submit -->
+                    <button type="submit">Submit</button>
+                </form>
+
+                <p id="thank-you-message"></p>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-content">
+
+                <section class="footer-brand">
+                    <h3>GlamNail</h3>
+                    <p>Luxury false nail sets designed to elevate your everyday style.</p>
+                </section>
+
+                <section class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#products">Shop Products</a></li>
+                        <li><a href="#game">Play & Win</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </section>
+
+                <section class="footer-help">
+                    <h4>Customer Help</h4>
+                    <ul>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </section>
+
+                <section class="footer-social">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 GlamNail. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
